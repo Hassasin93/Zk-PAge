@@ -37,12 +37,20 @@ header {
 }
 
 .logo img {
-    width: 150px;
+    width: 200px;
     height: auto;
     display: block;
+    gap:0px;
+    align-items: right;
 }
-
-
+.eslogan {
+      color: white;
+    font-size: 40px;
+    font-weight: 600;
+    border-left: 2px solid #e00000;
+    padding-left: 05px;
+    margin-left: 0;
+}
 /* ==============================
    MENÚ
 ================================ */
@@ -54,7 +62,7 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: #333;
+    color: white;
     margin-left: 30px;
     font-weight: 600;
     transition: color 0.3s ease;
@@ -82,8 +90,8 @@ nav a:hover {
     padding: 60px 20px;
 
     background: linear-gradient(
-        rgba(0, 0, 0, 0.60),
-        rgba(0, 0, 0, 0.60)
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0)
     ),
     url("img/fondo.png") center/cover no-repeat;
 
@@ -137,12 +145,16 @@ nav a:hover {
 ================================ */
 
 .seccion {
-    padding: 70px 7%;
+    padding: 100px 7%;
     text-align: center;
     background: white;
 }
 
-.seccion h2,
+.seccion h2{
+    font-size: 36px;
+    margin-bottom: 15px;
+    Color: #c62828;
+}
 .nosotros h2 {
     font-size: 36px;
     color: #111;
@@ -180,12 +192,13 @@ nav a:hover {
     border-top: 4px solid #c62828;
     box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease,background-color 0.3s ease;
 }
 
 .tarjeta:hover {
     transform: translateY(-8px);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    background-color: #d3d3d3;
 }
 
 .icono {
@@ -212,7 +225,7 @@ nav a:hover {
 .nosotros {
     padding: 80px 7%;
 
-    background: #111;
+    background: #7B1E2B;
 
     color: white;
 
@@ -238,15 +251,26 @@ nav a:hover {
 ================================ */
 
 .contact {
-    background: #ffffff;
-    padding: 80px 40px;
-    text-align: center;
-    border-top: 1px solid #eeeeee;
-}
+    display: grid;
 
+    grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+
+    gap: 25px;
+
+    max-width: 1200px;
+
+    margin: 40px auto 0;
+
+}
+.contacto:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
 .contacto-contenido {
     max-width: 1100px;
     margin: auto;
+    text-align: center;
 }
 
 .contact h2 {
@@ -263,19 +287,25 @@ nav a:hover {
 
 .contacto-datos {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 25px;
     margin-bottom: 40px;
 }
 
 .contacto-item {
     background: #fafafa;
+    text-align: center;
     padding: 30px 20px;
     border-radius: 10px;
     border: 1px solid #eeeeee;
     border-top: 3px solid #c62828;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
-
+.contacto-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.396);
+    background-color: #d3d3d3;
+}
 .contacto-icono {
     font-size: 32px;
     margin-bottom: 15px;
