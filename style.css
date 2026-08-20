@@ -345,51 +345,274 @@ nav a:hover {
 
 @media (max-width: 768px) {
 
+    /* ==========================
+       ENCABEZADO
+    ========================== */
+
     header {
-       background: #ffffff;
-    padding: 12px 60px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08); 
+        width: 100%;
+        padding: 15px 20px;
+        background: #ffffff;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+
+        border-bottom: 2px solid #e00000;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     }
 
-    .logo img {
-        width: 150px;
-    }
 
-    nav {
-        gap: 15px;
-        flex-wrap: wrap;
+    /* ==========================
+       LOGO
+    ========================== */
+
+    .logo {
+        width: 100%;
+        display: flex;
         justify-content: center;
     }
 
-    nav a {
-        text-decoration: none;
-    color: #c62828;
-    margin-left: 30px;
-    font-weight: 600;
-    transition: color 0.3s ease;
+    .logo img {
+        width: 140px;
+        height: auto;
     }
+
+
+    /* ==========================
+       ESLOGAN
+    ========================== */
+
+    .eslogan {
+        width: 100%;
+        margin: 10px 0 15px 0;
+
+        padding-left: 0;
+
+        border-left: none;
+        border-top: 2px solid #e00000;
+
+        padding-top: 10px;
+
+        color: #222;
+
+        text-align: center;
+
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 1.3;
+    }
+
+
+    .eslogan p {
+        margin: 0;
+    }
+
+
+    /* ==========================
+       MENÚ
+    ========================== */
+
+    nav {
+        width: 100%;
+
+        display: flex;
+        flex-direction: row;
+
+        justify-content: center;
+        align-items: center;
+
+        gap: 18px;
+
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        margin-left: 0;
+
+        color: #c62828;
+
+        font-size: 15px;
+        font-weight: 600;
+
+        text-decoration: none;
+
+        white-space: nowrap;
+    }
+
+    nav a:hover {
+        margin-left: 0;
+        color: #8e0000;
+    }
+
+
+    /* ==========================
+       PORTADA
+    ========================== */
 
     .hero {
-        min-height: 450px;
+        width: 100%;
+
+        min-height: 500px;
+
+        padding: 40px 20px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
-    .hero h1 {
-        font-size: 34px;
+
+    .hero-contenido {
+        width: 100%;
+        max-width: 100%;
     }
+
+
+    .hero h1 {
+        font-size: 32px;
+        line-height: 1.2;
+        margin-bottom: 15px;
+    }
+
 
     .hero p {
         font-size: 17px;
+        line-height: 1.5;
+        margin-bottom: 25px;
     }
 
+
+    /* ==========================
+       SECCIONES
+    ========================== */
+
     .seccion {
-        padding: 50px 20px;
+        width: 100%;
+        padding: 55px 20px;
     }
+
 
     .seccion h2,
     .nosotros h2 {
         font-size: 30px;
+        line-height: 1.2;
     }
+
+
+    .descripcion {
+        width: 100%;
+        font-size: 16px;
+    }
+
+
+    /* ==========================
+       SERVICIOS
+    ========================== */
+
+    .servicios {
+        width: 100%;
+
+        display: grid;
+
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+
+        margin-top: 30px;
+    }
+
+
+    .tarjeta {
+        width: 100%;
+        padding: 30px 20px;
+    }
+
+
+    /* ==========================
+       QUIÉNES SOMOS
+    ========================== */
+
+    .nosotros {
+        width: 100%;
+        padding: 60px 20px;
+    }
+
+
+    .nosotros p {
+        width: 100%;
+
+        font-size: 17px;
+        line-height: 1.7;
+    }
+
+
+    /* ==========================
+       CONTACTO
+    ========================== */
+
+    .contact {
+        width: 100%;
+        padding: 55px 20px;
+    }
+
+
+    .contacto-contenido {
+        width: 100%;
+    }
+
+
+    .contact h2 {
+        font-size: 30px;
+    }
+
+
+    .contacto-intro {
+        font-size: 16px;
+    }
+
+
+    .contacto-datos {
+        width: 100%;
+
+        display: grid;
+
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+
+    .contacto-item {
+        width: 100%;
+    }
+
+
+    .whatsapp-btn {
+        width: 100%;
+        max-width: 300px;
+    }
+
+
+    /* ==========================
+       PIE DE PÁGINA
+    ========================== */
+
+    footer {
+        width: 100%;
+        padding: 25px 20px;
+
+        text-align: center;
+
+        font-size: 14px;
+    }
+
 }
